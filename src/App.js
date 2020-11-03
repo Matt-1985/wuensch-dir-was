@@ -54,9 +54,11 @@ function App() {
         </li>
       </ul>
       <Switch>
+        <Route exact path="/">
+          Home
+        </Route>
         <Route path="/wünsche">Wünsche</Route>
         <Route path="/contact">Contact</Route>
-        <Route path="/">Home</Route>
       </Switch>
     </Router>
   );
