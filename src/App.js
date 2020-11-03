@@ -1,7 +1,8 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Button from './components/Button';
-import WishListItem from './components/WishListItem';
 import GlobalStyle from './GlobalStyle';
+import Add from './pages/Add';
+import Wishlist from './pages/Wishlist';
+import Welcome from './pages/Welcome';
 
 // const logoSpin = keyframes`
 //   from {
@@ -48,8 +49,13 @@ function App() {
       <GlobalStyle />
       <Switch>
         <Route exact path="/">
-          <WishListItem title="Matti" />
-          <Button>+</Button>
+          <Welcome title="Matti" />
+        </Route>
+        <Route exact path="/add">
+          <Add />
+        </Route>
+        <Route exact path="/wishlist">
+          <Wishlist />
         </Route>
       </Switch>
     </Router>

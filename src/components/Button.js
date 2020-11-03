@@ -9,6 +9,7 @@ const Button = styled.button`
   line-height: 1;
   width: 48px;
   height: 42px;
+  margin-left: 7px;
   cursor: pointer;
 `;
 
